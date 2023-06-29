@@ -21,7 +21,7 @@ export class AppComponent {}
 
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [],
+  // entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
