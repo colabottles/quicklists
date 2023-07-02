@@ -9,14 +9,10 @@ import { StorageService } from './storage.service';
   providedIn: 'root',
 })
 export class ChecklistService {
-  // This is our data source where we will emit the latest state
   private checklists$ = new BehaviorSubject<Checklist[]>([]);
 
-  // This is what we will use to consume the checklist data throughout the app
   private sharedChecklists$: Observable<Checklist[]> = this.checklists$.pipe(
-    // Trigger a save whenever this stream emits new data
     tap((checklists) => this.storageService.saveChecklists(checklists)),
-    // Share this stream with multiple subscribers, instead of creating a new one for each
     shareReplay(1)
   );
 
@@ -39,7 +35,7 @@ export class ChecklistService {
 
   getChecklistById(id: string) {
     return this.getChecklists().pipe(
-      filter((checklists) => checklists.length > 0), // don't emit if checklists haven't loaded yet
+      filter((checklists) => checklists.length > 0),
       map((checklists) => checklists.find((checklist) => checklist.id === id))
     );
   }

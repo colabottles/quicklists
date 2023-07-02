@@ -41,13 +41,6 @@ import { Checklist } from '../../../shared/interfaces/checklist';
       </ion-toolbar>
     </ion-header>
   `,
-  styles: [
-    `
-      ion-header {
-        background-color: var(--ion-color-primary);
-      }
-    `,
-  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ChecklistItemHeaderComponent {
