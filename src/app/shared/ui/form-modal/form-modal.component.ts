@@ -14,7 +14,7 @@ import { IonicModule, ModalController } from '@ionic/angular';
   selector: 'app-form-modal',
   template: `
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-title data-test="form-modal-title">{{ title }}</ion-title>
         <ion-buttons slot="end">
           <ion-button data-test="form-modal-cancel" (click)="dismiss()">

@@ -13,7 +13,7 @@ import { Checklist } from '../../../shared/interfaces/checklist';
   selector: 'app-checklist-item-header',
   template: `
     <ion-header class="ion-no-border">
-      <ion-toolbar color="success">
+      <ion-toolbar color="primary">
         <ion-buttons slot="start">
           <ion-back-button
             color="light"

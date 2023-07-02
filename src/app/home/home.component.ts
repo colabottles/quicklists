@@ -24,7 +24,7 @@ import { ChecklistListComponentModule } from './ui/checklist-list/checklist-list
   selector: 'app-home',
   template: `
     <ion-header>
-      <ion-toolbar color="success">
+      <ion-toolbar color="primary">
         <ion-title>
           <img src="assets/logo.svg" />
         </ion-title>

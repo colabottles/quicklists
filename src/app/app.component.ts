@@ -47,7 +47,6 @@ export class AppComponent implements OnInit {
     IonicModule.forRoot(),
     IonicStorageModule.forRoot({
       driverOrder: [
-        // eslint-disable-next-line no-underscore-dangle
         CordovaSQLiteDriver._driver,
         Drivers.IndexedDB,
         Drivers.LocalStorage,
