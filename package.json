@@ -31,7 +31,7 @@
     "axios": "^1.12.0",
     "braces": "^3.0.3",
     "ejs": "^3.1.10",
-    "express": "^4.21.2",
+    "express": "^4.22.1",
     "follow-redirects": "^1.15.6",
     "ionicons": "^7.4.0",
     "ip": "^2.0.1",
